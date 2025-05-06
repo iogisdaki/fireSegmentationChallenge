@@ -1,0 +1,5 @@
+# Ignore datasets and outputs
+datasets/fire/images/
+datasets/fire/masks/
+output/
+log/
