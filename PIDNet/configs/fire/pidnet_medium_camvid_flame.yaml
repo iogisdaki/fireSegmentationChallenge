@@ -51,8 +51,8 @@ TEST:
   IMAGE_SIZE: [600, 800]
   BASE_SIZE: 600
   BATCH_SIZE_PER_GPU: 1
-  FLIP_TEST: false
-  MULTI_SCALE: false
+  FLIP_TEST: true
+  MULTI_SCALE: true
   MODEL_FILE: 'output/fire/camvid/pidnet_medium_camvid_flame/best.pt'
   OUTPUT_INDEX: 1
 
