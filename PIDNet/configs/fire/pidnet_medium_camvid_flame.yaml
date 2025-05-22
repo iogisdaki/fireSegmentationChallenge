@@ -4,8 +4,8 @@ CUDNN:
   ENABLED: true
 
 GPUS: (0,)
-OUTPUT_DIR: 'output/fire'
-LOG_DIR: 'log/fire'
+OUTPUT_DIR: 'output/fire/baseline/seed0'
+LOG_DIR: 'log/fire/baseline/seed0'
 WORKERS: 3
 PRINT_FREQ: 10
 
@@ -53,6 +53,6 @@ TEST:
   BATCH_SIZE_PER_GPU: 1
   FLIP_TEST: false
   MULTI_SCALE: false
-  MODEL_FILE: 'output/fire/camvid/pidnet_medium_camvid_flame/best.pt'
+  MODEL_FILE: 'output/fire/baseline/seed0/camvid/pidnet_medium_camvid_flame/best.pt'
   OUTPUT_INDEX: 1
 
