@@ -4,8 +4,8 @@ CUDNN:
   ENABLED: true
 
 GPUS: (0,)
-OUTPUT_DIR: 'output/fire'
-LOG_DIR: 'log/fire'
+OUTPUT_DIR: 'output/fire/cbam/seed0'
+LOG_DIR: 'log/fire/cbam/seed0'
 WORKERS: 3
 PRINT_FREQ: 10
 

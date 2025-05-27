@@ -113,14 +113,14 @@ class CamVid(BaseDataset):
 
 
         # Debugging info
-        print("\n==== Debug Sample ====\n")
-        print("Sample Name:", name)
-        print("Image path:", image_path)
-        print("Label path:", label_path)
-        print("Image shape:", image.shape)
-        print("Label shape:", label.shape)
-        print("Label unique values:", np.unique(label))
-        print("=======================\n")
+        #print("\n==== Debug Sample ====\n")
+        #print("Sample Name:", name)
+        #print("Image path:", image_path)
+        #print("Label path:", label_path)
+        #print("Image shape:", image.shape)
+        #print("Label shape:", label.shape)
+        #print("Label unique values:", np.unique(label))
+        #print("=======================\n")
 
         image, label, edge = self.gen_sample(image, label, 
                                 self.multi_scale, self.flip, edge_pad=False,
