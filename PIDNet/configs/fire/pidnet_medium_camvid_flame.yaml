@@ -4,8 +4,8 @@ CUDNN:
   ENABLED: true
 
 GPUS: (0,)
-OUTPUT_DIR: 'output/fire/baseline/seed0'
-LOG_DIR: 'log/fire/baseline/seed0'
+OUTPUT_DIR: 'output/fire/baseline/seed76_noflip'
+LOG_DIR: 'log/fire/baseline/seed76_noflip'
 WORKERS: 3
 PRINT_FREQ: 10
 
@@ -42,8 +42,8 @@ TRAIN:
   WD: 0.0005
   MOMENTUM: 0.9
   NESTEROV: false
-  FLIP: true
-  MULTI_SCALE: true
+  FLIP: false
+  MULTI_SCALE: false
   IGNORE_LABEL: 255
   SCALE_FACTOR: 16
 
@@ -53,6 +53,6 @@ TEST:
   BATCH_SIZE_PER_GPU: 1
   FLIP_TEST: false
   MULTI_SCALE: false
-  MODEL_FILE: 'output/fire/baseline/seed0/camvid/pidnet_medium_camvid_flame/best.pt'
+  MODEL_FILE: 'output/fire/baseline/seed76_noflip/camvid/pidnet_medium_camvid_flame/best.pt'
   OUTPUT_INDEX: 1
 
