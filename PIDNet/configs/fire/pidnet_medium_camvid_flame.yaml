@@ -4,8 +4,8 @@ CUDNN:
   ENABLED: true
 
 GPUS: (0,)
-OUTPUT_DIR: 'output/fire/cbam/seed0'
-LOG_DIR: 'log/fire/cbam/seed0'
+OUTPUT_DIR: 'output/fire/cbam/seed76'
+LOG_DIR: 'log/fire/cbam/seed76'
 WORKERS: 3
 PRINT_FREQ: 10
 
@@ -48,11 +48,11 @@ TRAIN:
   SCALE_FACTOR: 16
 
 TEST:
-  IMAGE_SIZE: [600, 800]
+  IMAGE_SIZE: [600,800]
   BASE_SIZE: 600
   BATCH_SIZE_PER_GPU: 1
-  FLIP_TEST: true
-  MULTI_SCALE: true
-  MODEL_FILE: 'output/fire/camvid/pidnet_medium_camvid_flame/best.pt'
+  FLIP_TEST: false
+  MULTI_SCALE: false
+  MODEL_FILE: 'output/fire/cbam/seed76/train/best.pt'
   OUTPUT_INDEX: 1
 
