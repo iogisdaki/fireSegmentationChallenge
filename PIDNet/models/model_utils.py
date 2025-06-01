@@ -4,7 +4,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from models.attention.cbam import CBAM #here
+from models.attention.cbam import CBAM # changed
 
 BatchNorm2d = nn.BatchNorm2d
 bn_mom = 0.1
@@ -243,7 +243,7 @@ class PAPPM(nn.Module):
                                     nn.ReLU(inplace=True),
                                     nn.Conv2d(inplanes, outplanes, kernel_size=1, bias=False),
                                     )
-        self.cbam = CBAM(outplanes) #here
+        self.cbam = CBAM(outplanes) # changed
 
     def forward(self, x):
         width = x.shape[-1]
@@ -263,7 +263,7 @@ class PAPPM(nn.Module):
         scale_out = self.scale_process(torch.cat(scale_list, 1))
        
         out = self.compression(torch.cat([x_,scale_out], 1)) + self.shortcut(x)
-        out = self.cbam(out) #here
+        out = self.cbam(out) # changed
         return out
     
 

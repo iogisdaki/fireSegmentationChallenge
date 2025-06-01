@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from models.attention.cbam import CBAM # here
+from models.attention.cbam import CBAM # changed
 
 from torch.nn import BatchNorm2d
 
@@ -64,7 +64,7 @@ class Resnet18(nn.Module):
         self.layer3 = create_layer_basic(128, 256, bnum=2, stride=2)
         self.layer4 = create_layer_basic(256, 512, bnum=2, stride=2)
 
-        self.cbam_stage4 = CBAM(512) # here
+        self.cbam_stage4 = CBAM(512) # changed
 
         self.init_weight(path)
 
@@ -78,7 +78,7 @@ class Resnet18(nn.Module):
         feat8 = self.layer2(x) # 1/8
         feat16 = self.layer3(feat8) # 1/16
         feat32 = self.layer4(feat16) # 1/32
-        feat32 = self.cbam_stage4(feat32) # here
+        feat32 = self.cbam_stage4(feat32) # changed
         return feat8, feat16, feat32
 
     def init_weight(self, path):
