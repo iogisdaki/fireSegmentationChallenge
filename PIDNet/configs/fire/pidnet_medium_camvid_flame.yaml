@@ -13,7 +13,7 @@ DATASET:
   DATASET: camvid  # still using the CamVid loader
   ROOT: datasets/fire/
   TRAIN_SET: train.txt
-  TEST_SET: val.txt
+  TEST_SET: test.txt
   NUM_CLASSES: 2
 
 MODEL:
