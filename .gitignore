@@ -5,3 +5,4 @@ datasets/fire/images/
 datasets/fire/masks/
 output/
 log/
+pretrained_models/camvid/camvidPretainedMedium.pt
