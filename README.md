@@ -51,6 +51,7 @@ Make sure the `MODEL_FILE` in your YAML config is correctly set to the correspon
 ## More Details
 
 For a full explanation of the experiments, CBAM integration, and performance comparisons between the baseline and the CBAM-enhanced model, please refer to the accompanying report PDF in the repository.
+[Project Presentation](https://github.com/iogisdaki/fireSegmentationChallenge/blob/pidnet_baseline/PIDNet/docs/PIDNet_CBAM_Presentation.pdf)
 
 ---
 
