@@ -1,5 +1,8 @@
 # Ignore datasets and outputs
+data/
+samples/
 datasets/fire/images/
 datasets/fire/masks/
 output/
 log/
+PIDNet/pretrained_models/camvid/camvidPretainedMedium.pt
